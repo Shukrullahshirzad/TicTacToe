@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Tic Tac Toe</h1>
+    <div class="userSelection">
+      <div class="markSelection">
+        <h2>Select Your Mark</h2>
+        <button id="x">X</button>
+        <button id="o">O</button>
+      </div>
+      <div class="selectOpponent">
+        <h2>Select Your Opponent</h2>
+        <button id="human">Humnan</button>
+        <button id="ai">AI</button>
+      </div>
+      <div class="difficulty">
+        <h2>Difficulty</h2>
+        <button class="easy">Easy</button>
+        <button class="easy">Moderate</button>
+        <button class="easy">Hard</button>
+        <button class="easy">Impossible</button>
+      </div>
+    </div>
+    <div class="gameBoard">
+      <div class="boardTile">x</div>
+      <div class="boardTile">x</div>
+      <div class="boardTile">o</div>
+      <div class="boardTile">o</div>
+      <div class="boardTile">x</div>
+      <div class="boardTile">o</div>
+      <div class="boardTile">x</div>
+      <div class="boardTile">o</div>
+      <div class="boardTile">o</div>
+    </div>
+    <div class="showResult">
+      <p><span id="winner"></span> is the winner!</p>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

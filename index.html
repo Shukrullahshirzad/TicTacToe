@@ -9,40 +9,41 @@
 <body>
   <div class="wrapper">
     <h1>Tic Tac Toe</h1>
-    <div class="userSelection">
+    <div class="controls">
+      <h2>Controls</h2>
       <div class="markSelection">
         <h2>Select Your Mark</h2>
-        <button id="x">X</button>
-        <button id="o">O</button>
+        <button class="x btn">X</button>
+        <button class="o btn">O</button>
       </div>
       <div class="selectOpponent">
         <h2>Select Your Opponent</h2>
-        <button id="human">Humnan</button>
-        <button id="ai">AI</button>
+        <button class="human btn">Humnan</button>
+        <button class="ai btn">AI</button>
       </div>
       <div class="difficulty">
         <h2>Difficulty</h2>
-        <button class="easy">Easy</button>
-        <button class="easy">Moderate</button>
-        <button class="easy">Hard</button>
-        <button class="easy">Impossible</button>
+        <button class="easy btn">Easy</button>
+        <button class="moderate btn">Moderate</button>
+        <button class="hard btn">Hard</button>
+        <button class="impossible btn">Impossible</button>
       </div>
     </div>
     <div class="gameBoard">
-      <div class="boardTile">x</div>
-      <div class="boardTile">x</div>
-      <div class="boardTile">o</div>
-      <div class="boardTile">o</div>
-      <div class="boardTile">x</div>
-      <div class="boardTile">o</div>
-      <div class="boardTile">x</div>
-      <div class="boardTile">o</div>
-      <div class="boardTile">o</div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
+      <div class="boardTile data-"></div>
     </div>
-    <div class="showResult">
-      <p><span id="winner"></span> is the winner!</p>
-      <button id="playAgain">Play Again</button>
-    </div>
+  </div>
+  <div class="showResult hide">
+    <p><span id="winner"></span> is the WINNER!</p>
+    <button id="playAgain">Play Again</button>
   </div>
   <script src="script.js"></script>
 </body>

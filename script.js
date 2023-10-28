@@ -33,7 +33,7 @@ const elements = (function(){
     }
 })();
 
-userInputs = function userInputs(){
+function game(){
     let opponent = '';
     let difficulty = '';
     let activeMark = '';
@@ -140,7 +140,7 @@ userInputs = function userInputs(){
                 for (const win of winCombos) {
                     if(elements.tiles[win[0]].textContent == elements.tiles[win[1]].textContent && elements.tiles[win[0]].textContent == elements.tiles[win[2]].textContent && elements.tiles[win[0]].textContent !== ''){
                         elements.showResultEl.classList.remove('hide');
-                        // elements.winnerEl.textContent = elements.tiles[win[0]].textContent;
+                        elements.winnerEl.textContent = elements.tiles[win[0]].textContent;
                     }
                     
                 }
@@ -157,6 +157,6 @@ userInputs = function userInputs(){
     }
 
 
-userInputs()
+game()
 
  
